@@ -18,7 +18,7 @@ mysqli_close($conn);
       <a href="form.html">Input Data Buku</a> <br />
 
       <?php
-      $no = 1;
+      $number = 1;
       while($buku = mysqli_fetch_array($data)) {
         $judul = $buku["judul"];
         $genre = $buku["genre"];
@@ -28,7 +28,7 @@ mysqli_close($conn);
         <br>
         <fieldset>
           <legend>
-            <h2>$no. $judul</h2>
+            <h2>$number. $judul</h2>
           </legend>
           <font size='4'>
             <p>Genre: $genre</p>
@@ -36,7 +36,7 @@ mysqli_close($conn);
           </font>
         </fieldset>";
 
-        $no++;
+        $number++;
       } ?>
     </font>
   </body>
