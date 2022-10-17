@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Data Buku</title>
+  </head>
+  <body bgcolor="#011">
+    <font color="#fff">
+      <h1>Input Data Buku</h1>
+
+      <a href="index.php">Beranda</a> -- <a href="list.php">Daftar Buku</a>
+
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>Data Buku Baru</legend>
+        <form action="process.php" method="post">
+          <table border="1">
+            <tr>
+              <td>Judul Buku</td>
+              <td align="center">:</td>
+              <td><input type="text" name="judul" /></td>
+            </tr>
+            <tr>
+              <td>Penulis</td>
+              <td align="center">:</td>
+              <td><input type="text" name="penulis" /></td>
+            </tr>
+            <tr>
+              <td>Genre</td>
+              <td align="center">:</td>
+              <td>
+                <select name="genre">
+                  <option value="Romatis">Romantis</option>
+                  <option value="Fiksi ilmiah">Fiksi Ilmiah</option>
+                  <option value="Fantasi">Fantasi</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Keterangan</td>
+              <td align="center">:</td>
+              <td>
+                <input type="radio" name="keterangan" value="Belum Dibaca" />
+                Belum Dibaca <br />
+                <input
+                  type="radio"
+                  name="keterangan"
+                  value="Sementara Dibaca"
+                />
+                Sementara Dibaca <br />
+                <input type="radio" name="keterangan" value="Selesai Dibaca" />
+                Selesai Dibaca <br />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" />
+        </form>
+      </fieldset>
+    </font>
+  </body>
+</html>
